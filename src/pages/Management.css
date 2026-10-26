@@ -1,0 +1,8 @@
+.management { max-width: 760px; margin: 2rem auto; }
+.management > p { margin: 1rem 0; }
+.management fieldset, .management article { background: white; border: 1px solid #ddd; border-radius: 12px; padding: 1.5rem; margin: 1rem 0; }
+.management label { display: block; margin: 0.8rem 0; font-weight: 600; }
+.management input, .management textarea, .management select { display: block; width: 100%; padding: 0.7rem; border: 1px solid #bbb; border-radius: 6px; font: inherit; }
+.management button { margin: 0.5rem 0.5rem 0 0; padding: 0.65rem 1rem; border: 0; border-radius: 6px; background: #667eea; color: white; cursor: pointer; }
+.management button:disabled { opacity: 0.5; cursor: not-allowed; }
+.management [role=alert] { color: #ad2030; }
