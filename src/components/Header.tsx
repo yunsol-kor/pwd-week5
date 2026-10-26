@@ -60,7 +60,7 @@ function Header() {
         <NavLink to="/submit" className={isActive('/submit')}>
           <FaPlus /> Submit New restaurant
         </NavLink>
-      <NavLink to="/admin" className={isActive('/admin')}>맛집 관리</NavLink><NavLink to="/submissions" className={isActive('/submissions')}>제보 관리</NavLink></Nav>
+      </Nav>
     </HeaderContainer>
   );
 }
