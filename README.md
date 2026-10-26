@@ -67,3 +67,18 @@ export default defineConfig([
   },
 ])
 ```
+
+## 6주차 API 연동
+
+맛집 목록·상세·인기 목록과 새 맛집 등록은 Render API를 사용합니다.
+기존 제보와 좋아요는 현재 브라우저의 LocalStorage에 보관됩니다.
+
+- 서버: https://pwd-week6-0p9u.onrender.com
+- 관리자: `/admin` (등록 가능, 서버에서 지원하지 않는 수정·삭제는 비활성화)
+- 제보 관리: `/submissions` (승인하면 Render에 맛집 등록)
+- 로컬: `.env.example`을 참고해 `.env.local`에 `VITE_API_BASE_URL`을 지정합니다.
+- Vercel: Production과 Preview의 `VITE_API_BASE_URL`에 위 서버 주소를 설정합니다.
+- 검사: `npm run typecheck`, `npm run lint`, `npm run build`
+
+이 프로젝트는 BrowserRouter를 사용하며 Vercel의 `vercel.json` rewrite로 상세 주소 새로고침을 지원합니다.
+Render에 새로 등록한 맛집은 서버 재시작 시 초기 데이터로 돌아갑니다.
